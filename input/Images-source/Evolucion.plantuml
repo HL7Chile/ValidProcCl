@@ -1,0 +1,19 @@
+@startuml
+
+start
+
+if (¿Requiere actualización?) then (Si)
+  :Cambios evolutivos;
+  repeat
+    :Proceso Balotaje;
+    backward :Cambios y Correcciones;
+    repeat while (¿Aprobó Pilotaje?) is (No) not (Si)
+:Guía Estable;
+:Connectathon;
+:Guía Normativa V>1;
+
+endif
+
+@enduml
+
+

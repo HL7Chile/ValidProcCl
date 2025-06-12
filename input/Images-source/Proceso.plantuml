@@ -1,0 +1,51 @@
+@startuml
+|#LightBlue|Primera Etapa|
+start
+
+:Insumos;
+note right
+  Alcances, 
+  Objetivos, 
+  Revisión Guías Internacionales
+  ====
+  * Definiciones Basales Necesarias
+end note
+:**Primera** Versión Guía;
+note right
+ Casos de Uso
+ Transacciones
+ Operaciones
+ Modelo Lógico
+  ====
+  * Primera Revisión HL7 Chile
+end note
+-> preparación balotaje;
+|#AntiqueWhite|Segunda Etapa|
+repeat
+    :Guía para **Pilotaje**;
+    -> balotaje 1 mes;
+    backward :Cambios y Correcciones;
+repeat while (¿Aprobó Pilotaje?) is (No) not (Si)
+:Guía **STU**;
+-> En STU a lo mas 6 meses;
+|#LightBlue|Ciclo de Validación|
+repeat
+:Proceso **Balotaje**;
+-> 1 mes;
+backward :Cambios y Correcciones;
+repeat while (¿Aprobó Pilotaje?) is (No) not (Si)
+|#AntiqueWhite|Estabilización|
+:Guía **Estable**;
+:**Connectathon-Cl**;
+:Guía **Normativa** V 1.0.0;
+partition Evolución {
+    if (¿Requiere Evolución?) is (Si) then 
+       :Proceso validacion Version Avanzada;
+    endif
+}
+
+end
+@enduml
+
+
+
