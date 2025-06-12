@@ -6,7 +6,7 @@
 id: hl7.fhir.cl.validacionigcl
 canonical: https://hl7chile.cl/fhir/ig/validacionigcl
 name: ValidacionIgCl
-# title: Example Title
+ title: Ciclo de Madures y Proceso de Validacion GI FHIR CL
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
 version: 0.1.0
@@ -14,7 +14,7 @@ fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2025+
 releaseLabel: informative
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 publisher:
   name: HL7 Chile
   url: https://hl7chile.cl/
